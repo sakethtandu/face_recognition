@@ -1,0 +1,13 @@
+{% extends "fr/layout.html" %}
+{% block content %}
+<div class="jumbotron">
+ <h1>Face Recognition</h1>
+
+ {% if user.is_authenticated %}
+   <h4>Welcome {{ user.name }}!</h4>
+   
+ {% else %}
+   <a href="{% url 'signin' %}" class="btn btn-primary btn-large">Click here to Register</a>
+ {% endif %}
+</div>
+{% endblock %}
