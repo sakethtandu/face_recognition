@@ -9,6 +9,7 @@ import face_recognition
 import os
 import cv2
 
+
 UNKNOWN_FACES_DIR = r'D:\AI\FR\unknownfaces'
 KNOWN_FACES_DIR = 'D:\AI\FR\knownfaces'
 
